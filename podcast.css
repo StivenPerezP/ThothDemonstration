@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #05274c;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container a {
+    padding-left: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 3px;
+}
+
+header .links a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px;
+}
+
+header .links a:hover{
+    color: #05274c;
+    background-color: white;
+}
+
+
+#thotcast {
+    background-image: url(media/fondo_podcast.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derecha-t {
+    color: white;
+}
+
+.derecha-t h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.derecha-t h2 {
+    font-size: 3rem;
+}
+
+.izqu-t  {
+    /* background-image: url(media/2.png);*/
+    height: 600px;
+    width: 650px; 
+}
+
+.linea {
+    background-color: white;
+    height: 3px;
+    width: 100px;
+}
+
+
+#episodios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodio {
+    margin: 20px 0;
+    background-color: #05274c;
+    height: 100px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+}
+
+.episodio img {
+    height: 100px;
+    width: 150px;
+}
+
+.episodio p {
+    color: white;
+}
+
+
+@media (min-width: 720px){
+
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 0;
+        padding-right: 30px;
+        padding-top: 0;
+    }
+
+    header .links a {
+        text-decoration: none;
+        color: white;
+        padding: 22px 15px;
+    }
+
+}
